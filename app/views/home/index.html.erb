@@ -1,0 +1,18 @@
+<div style="margin: 10rem auto;width: 10rem">
+  <h3>Wicked PDF test</h3>
+  <%= select_tag :number, options_for_select((1..10).to_a, 5), id: 'select' %>
+  <button class="generate-pdfs" onclick="generatePdfs()">Generate PDF's</button>
+  <br>
+  <br>
+  Kindly allow popup's to test this
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  function generatePdfs() {
+    number = parseInt(document.getElementById('select').value)
+    for (i = 0; i < number; i++) {
+      url = '/home.pdf?index=' + (i + 1)
+      window.open(url, '_blank')
+    }
+  }
+</script>
