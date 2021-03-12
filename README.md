@@ -6,4 +6,5 @@ application up and running.
 Things you may want to cover:
 
 * bundle install
+* rails db:create db:migrate
 * rails s

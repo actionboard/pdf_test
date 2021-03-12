@@ -14,6 +14,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 gem 'faker'
+gem 'sidekiq'
+gem "aws-sdk-s3", require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
